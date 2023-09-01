@@ -3,45 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="result-summary-box">
+    <div class="result-box">
+      <p id="result-para">Your Result</p>
+      
+      <div class="score-box">
+        <span id="score-title">76</span>
+        <p id="para">of 100</p>
+      </div>
 
-  Your Result
-  76
-  of 100
+      <div class="summary-box">
+        <h2 id="summary-title">Great</h2>
+        <p id="summary-para">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    
+    <div class="summary-details-box">
+      <h3 id="summary-list-title">Summary</h3>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+      <div class="progress-list">
+        <div class="progress-box red">
+          <img class="progress-image" src="./assets/images/icon-reaction.svg">
+          <p class="progress-status">
+            Reaction
+          </p>
+          <div class="progress-value">
+            <span id="progress-value">80</span>
+            <p id="para">&nbsp;/ 100</p>
+          </div>
+        </div>
   
-  Summary
+        <div class="progress-box orange">
+          <img class="progress-image" src="./assets/images/icon-memory.svg">
+          <p class="progress-status">
+            Memory
+          </p>
+          <div class="progress-value">
+            <span id="progress-value">92</span>
+            <p id="para">&nbsp;/ 100</p>
+          </div>
+        </div>
+  
+        <div class="progress-box green">
+          <img class="progress-image" src="./assets/images/icon-verbal.svg">
+          <p class="progress-status">
+            Verbal
+          </p>
+          <div class="progress-value">
+            <span id="progress-value">61</span>
+            <p id="para">&nbsp;/ 100</p>
+          </div>
+        </div>
+  
+        <div class="progress-box purple">
+          <img class="progress-image" src="./assets/images/icon-visual.svg">
+          <p class="progress-status">
+            Visual
+          </p>
+          <div class="progress-value">
+            <span id="progress-value">72</span>
+            <p id="para">&nbsp;/ 100</p>
+          </div>
+        </div>
+      </div>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+      <button class="continue-btn">Continue</button>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sherly Hu</a>.
   </div>
 </body>
 </html>

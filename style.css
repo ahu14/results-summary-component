@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root{
+    font-family: Hanken Grotesk;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.result-summary-box{
+    width: 43vw;
+    height: 60vh;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 20px 15px hsl(221, 100%, 96%);
+}
+
+.result-box{
+    width: 23vw;
+    height: inherit;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#result-para{
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+
+.score-box{
+    width: 9.5vw;
+    height: 9.5vw;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.score-box > #para{
+    margin: 0;
+    font-size: 13px;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary-box{
+    width: 15vw;
+    height: 25vh;
+}
+
+#summary-title{
+    margin-bottom: 2vh;
+    color:hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+#score-title{
+    font-size: 50px;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+}
+
+#summary-para{
+    margin-top: 0;
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+
+
+.summary-details-box{
+    width: 20vw;
+    height: inherit;
+    background:hsl(0, 0%, 100%);
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+
+#summary-list-title{
+    color: hsl(224, 30%, 27%);
+}
+
+.progress-list{
+    width: 20vw;
+    height: 40vh;
+
+    display: grid;
+    grid-template-rows: repeat(4, 9.5vh);
+}
+
+.progress-box{
+    height: 7.25vh;
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.progress-image{
+    display: flex;
+    justify-self: center;
+}
+
+.progress-value{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-right: 1vw;
+}
+
+#progress-value{
+    color:hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+.green{
+    color: hsl(166, 100%, 37%);
+    background: hsl(166, 100%, 96%);
+}
+
+.purple{
+    color: hsl(234, 85%, 45%);
+    background: hsl(234, 85%, 96%);
+}
+
+.orange{
+    color: hsl(39, 100%, 56%);
+    background: hsl(39, 100%, 96%);
+}
+
+.red{
+    color: hsl(0, 100%, 67%);
+    background: hsl(0, 100%, 98%);
+}
+
+.continue-btn{
+    width: 20vw;
+    height: 7vh;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+.continue-btn:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+
+.attribution { 
+    position: absolute;
+    bottom: 1vh;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
