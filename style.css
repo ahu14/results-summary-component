@@ -134,6 +134,10 @@ body{
     padding-right: 1vw;
 }
 
+.progress-value > #para{
+    color:hsl(241, 100%, 89%);
+}
+
 #progress-value{
     color:hsl(224, 30%, 27%);
     font-weight: 700;
@@ -175,8 +179,6 @@ body{
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-
-
 .attribution { 
     position: absolute;
     bottom: 1vh;
@@ -186,4 +188,92 @@ body{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media screen and (max-width: 375px){
+    body{
+        overflow-y: hidden;        
+    }
+
+    .result-summary-box{
+        width: 100vw;
+        height: 110vh;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .result-box{
+        width: 100vw;
+        height: 42vh;
+        border-radius: 0 0 20px 20px;
+    }
+
+    #result-para{
+        font-size: 15px;
+        margin: 1vh 0 0;
+    }
+
+    .score-box{
+        width: 16vh;
+        height: 16vh;
+    }
+
+    #score-title{
+        font-size: 35px;
+    }
+
+    .summary-box{
+        width: 80vw;
+        height: 16vh;
+    }
+
+    #summary-para{
+        font-size: 12px;
+    }
+
+    #summary-title{
+        font-size: 20px;
+    }
+
+
+    .summary-details-box{
+        width: 85vw;
+        height: 55vh;
+
+        align-items: center;
+        padding: 0;
+    }
+
+    #summary-list-title{
+        align-self: flex-start;
+        font-size: 16px;
+    }
+
+    .progress-list{
+        width: 85vw;
+    }
+
+    .progress-box{
+        font-size: 14px;
+    }
+
+    .progress-status{
+        font-weight: 700;
+    }
+
+    .progress-value > #para{
+        padding-right: 1vw;
+    }
+
+    .continue-btn{
+        width: 85vw;
+    }
+
+    .attribution{
+        display: none;
+    }
 }
