@@ -46,8 +46,8 @@ body{
 }
 
 .score-box{
-    width: 9.5vw;
-    height: 9.5vw;
+    width: 20vh;
+    height: 20vh;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
 
@@ -190,6 +190,56 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 
+
+@media screen and (max-width: 768px){
+    .result-summary-box{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .result-box{
+        width: 45vw;
+    }
+
+    #result-para{
+        margin-bottom: 0;
+    }
+
+    .score-box{
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .summary-box{
+        width: 40vw;
+        height: 20vh;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .summary-details-box{
+        width: 45vw;
+        height: inherit;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #summary-list-title{
+        align-self: flex-start;
+        padding: 0 2vw;
+    }
+
+    .progress-list{
+        width: 40vw;
+    }
+
+    .continue-btn{
+        width: 40vw;
+    }
+}
 
 
 @media screen and (max-width: 375px){
