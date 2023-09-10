@@ -11,6 +11,7 @@ body{
     margin: 0;
     width: 100vw;
     height: 100vh;
+    min-height: -webkit-fill-available;
 
     display: flex;
     align-items: center;
@@ -243,10 +244,6 @@ body{
 
 
 @media screen and (max-width: 375px){
-    body{
-        overflow-y: hidden;        
-    }
-
     .result-summary-box{
         width: 100vw;
         height: 110vh;
